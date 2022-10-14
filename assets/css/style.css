@@ -54,9 +54,11 @@ input {
     height: 1.5em;
     background-image: linear-gradient(0deg, #27222752, transparent);
 }
+
 input:hover {
     border: 1px solid cornsilk;
 }
+
 input:active {
     border: 3px inset cornsilk;
 }
@@ -76,7 +78,7 @@ div input.operatore {
 }
 
 
-/* Menu aggiuntivo */
+/* Menu aggiuntivo a comparsa */
 
 input#scientifica {
     display: none;
