@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+#contenitore {
+    border-radius: 1.5em;
+    margin: 0 auto;
+    width: 18em;
+    height: 27em;
+    background-color: #3A1320;
+    background-image: linear-gradient(180deg, #ffafaf52, transparent);
+    box-shadow: 0 3px 7px #0000007a;
+}
+
+#display {
+    margin: 1em;
+    height: 1.5em;
+    width: -webkit-fill-available;
+    width: -moz-available;
+    border: 1px solid #9f6262;
+    font-size: 2em;
+    color: #3A1320;
+    padding: 0 0.3em;
+    background-color: white;
+}
+
+#display:focus {
+    outline: 2px solid #ADF7DA;
+    border-color: #ADF7DA;
+}
+
+#tastiera {
+    margin: 0 2em;
+    text-align: center;
+    background-color: #9f6262;
+    padding: 0.1em 0;
+    background-image: linear-gradient(0deg, #27222752, transparent);
+    position: relative;
+}
+
+input {
+    border: none;
+    margin: 0.06em 0;
+    background-color: #ADF7DA;
+    color: #3A1320;
+    font-size: 2em;
+    width: 1.6em;
+    height: 1.5em;
+    background-image: linear-gradient(0deg, #27222752, transparent);
+}
+input:hover {
+    border: 1px solid #3A1320;
+}
+input:active {
+    border: 3px inset cornsilk;
+}
+
+#tastiera > input:last-of-type {
+    width: 6.76em;
+}
+
+input#resetta {
+    background-color: white;
+    color: #9f6262;
+}
+
+div input.operatore {
+    background-color: #4abda2;
+    color: white;
+}
+
+
+/* Menu aggiuntivo */
+
+input#scientifica {
+    display: none;
+}
+
+label {
+    cursor: pointer;
+    padding: 0 3em;
+}
+
+#espandiOpzioni {
+    width: 13.45em;
+    height: 1.5em;
+    background-color: #4abda2;
+    color: white;
+    font-size: 1em;
+    margin: 1px auto 3px;
+    line-height: 1.5em;
+    background-image: linear-gradient(0deg, #27222752, transparent);
+}
+
+#espansione {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #9f6262;
+    padding: 1.8em 0 3.33em;
+    background-image: linear-gradient(0deg, #27222752, transparent);
+    transform: none;
+}
+
+#scientifica:checked ~ #espansione{  
+    transform: translate(100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease;
+    z-index: 2;
+    opacity: 1;
+}
+
+#scientifica ~ #espansione{  
+    transform: translate(0, 0);
+    transition: transform 0.5s, opacity 0.55s ease, z-index 0.5s ease;
+    z-index: -1;
+    opacity: 0;
+}
