@@ -6,6 +6,9 @@ body {
 
 
 #contenitore {
+    border: 5px solid #9f6262;
+    border-bottom: 5px solid #774159;
+    border-top: 5px solid #ce9087;
     border-radius: 1.5em;
     margin: 0 auto;
     width: 18em;
@@ -22,9 +25,9 @@ body {
     width: -moz-available;
     border: 1px solid #9f6262;
     font-size: 2em;
-    color: #3A1320;
+    color: #243b43;
     padding: 0 0.3em;
-    background-color: white;
+    background-color: #c7dbc2;
 }
 
 #display:focus {
@@ -52,7 +55,7 @@ input {
     background-image: linear-gradient(0deg, #27222752, transparent);
 }
 input:hover {
-    border: 1px solid #3A1320;
+    border: 1px solid cornsilk;
 }
 input:active {
     border: 3px inset cornsilk;
@@ -100,7 +103,7 @@ label {
     top: 0;
     right: 0;
     background-color: #9f6262;
-    padding: 1.8em 0 3.33em;
+    padding: 1.85em 0.3em 3.34em 0;
     background-image: linear-gradient(0deg, #27222752, transparent);
     transform: none;
 }
@@ -118,3 +121,4 @@ label {
     z-index: -1;
     opacity: 0;
 }
+
